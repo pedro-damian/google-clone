@@ -23,14 +23,12 @@ a{
 header{
   width: 100%;
   height: 60px;
-  border: 1px solid;
 }
 
 header nav{
   display: flex;
   height: inherit; /*hereda la altura de su padre */
   justify-content: flex-end;
-  border: 1px solid red;
 }
 
 header nav .nav-right{
@@ -40,12 +38,12 @@ header nav .nav-right{
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid rgb(51, 255, 0);
 }
 
 header nav .nav-right a{
   margin-right: 1rem;
   color: #000;
+  font-size: 1.3rem;
 }
 
 header nav .nav-right img{
@@ -53,15 +51,106 @@ header nav .nav-right img{
 }
 
 
+/* seeccion contenedor-logo */
 main{
+  width: 100%;
+  height: 300px;
   margin-top: 150px;
-  text-align: center;
-  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 main .container-logo{
-  border: 1px solid blue;
-  /* margin: 0 auto; */
   margin-bottom: 3.5rem;
 }
 
+/* seccion contenedor-busqueda */
+main .container-busqueda{
+  width: 530px;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 0.3rem; */
+}
+
+main .container-busqueda:hover{
+  box-shadow: 0 1px 6px 0 #20212447; /* establece sombras al contenedor-busquueda */
+  border-color: #dfe1e500;
+}
+
+main .container-busqueda input{
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+/* seccion contenedor-botones */
+main .container-botones{
+  width: 530px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main .container-botones div{
+  display: inline-block;
+}
+
+main .container-botones button{
+  height: 3.6rem;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 1.4rem;
+  color: #5f6368;
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
+}
+
+main .container-botones button:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+
+footer{
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+}
+
+footer .footer-left{
+  justify-content: left;
+}
+
+footer .footer-right{
+  justify-content: right;
+}
+
+footer ul li a{
+  margin: 4rem;
+  color: #5f6368;
+}
