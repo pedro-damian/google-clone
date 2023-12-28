@@ -28,14 +28,14 @@ header{
 
 header nav{
   display: flex;
-  height: inherit;
+  height: inherit; /*hereda la altura de su padre */
   justify-content: flex-end;
   border: 1px solid red;
 }
 
 header nav .nav-right{
   width: 300px;
-  height: auto; /* tomara la altura de su padre header */
+  height: auto; /* tomara la altura de su padre */
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -52,4 +52,16 @@ header nav .nav-right img{
   border-radius: 50%;
 }
 
+
+main{
+  margin-top: 150px;
+  text-align: center;
+  border: 1px solid;
+}
+
+main .container-logo{
+  border: 1px solid blue;
+  /* margin: 0 auto; */
+  margin-bottom: 3.5rem;
+}
 
